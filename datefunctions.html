@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script>
+            function m1()
+            {
+                let mydate=new Date();
+                document.getElementById('demo').innerHTML=mydate.getDate()+" "+mydate.getFullYear()+"  "+mydate.getDay()+"  "+mydate.getMinutes()+"   "+mydate.getMonth()+"  "+mydate.getTime()+"  "+mydate.getHours();
+                 
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="m1()">click</button>
+        <h1 id="demo"></h1>
+    </body>
+</html>

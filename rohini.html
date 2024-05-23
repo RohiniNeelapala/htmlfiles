@@ -1,0 +1,59 @@
+<form action="C:\Users\hp\OneDrive\Desktop\html\one.html">
+    firstname:
+    <input type="text" required><br><br>
+    lastname:
+    <input type="text" required><br><br>
+    emailid:
+    <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"><br><br>
+    password:
+    <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"><br><br>
+    dateofbirth:
+    <input type="date"><br><br>
+    phone number:
+    <input type="tel" pattern="[1-9]{10}"><br><br>
+    pincode:
+    <input type="tel" pattern="[1-6]{6}"><br><br>
+    gender:<br>
+    <input type="radio" name="gender">male<br>
+    <input type="radio" name="gender">female<br><br>
+    year of passing:
+    <select>
+        <option>select</option>
+        <option>2020</option>
+        <option>2021</option>
+        <option>2022</option>
+        <option>2023</option>
+        <option>2024</option>
+        <option>2025</option>
+        <option>2026</option>
+    </select><br><br>
+    branch:<br>
+    <input list="abc">
+    <datalist id="abc">
+        <option>CSE</option>
+        <option>EEE</option>
+        <option>ECE</option>
+        <option>MECH</option>
+        <option>CIVIL</option>
+        <option>IT</option>
+        <option>BSC</option>
+        <option>MBA</option>
+        <option>MCA</option>
+</datalist><br><br>
+    languages known:<br>
+    <input type="checkbox" name="lan">telugu<br>
+    <input type="checkbox" name="lan">english<br>
+    <input type="checkbox" name="lan">hindi<br>
+    <input type="checkbox" name="lan">tamil<br><br>
+    skillset:<br>
+    <input type="checkbox" name="skl">java<br>
+    <input type="checkbox" name="skl">python<br>
+    <input type="checkbox" name="skl">sql<br>
+    <input type="checkbox" name="skl">html<br>
+    <input type="checkbox" name="skl">css<br>
+    <input type="checkbox" name="skl">javascript<br>
+    <input type="checkbox" name="skl">ai<br><br><br>
+    <input type="checkbox" required>accept all the terms and conditions<br><br>
+    <input type="submit">
+    <input type="reset">
+</form>

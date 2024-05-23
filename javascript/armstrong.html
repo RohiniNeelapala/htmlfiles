@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script>
+            function arm()
+            {
+                var num=prompt("enter number");
+                var count=0;
+                var temp=num;
+                var sum=0;
+                while(temp>0)
+                {
+                    count++;
+                    temp=parseInt(temp/10);
+                }
+                temp=num;
+                while(temp>0)
+                {
+                    var rem=temp%10;
+                    var power=parseInt(Math.pow(rem,count));
+                    sum=sum+power;
+                    temp=parseInt(temp/10);
+
+
+                }
+                if(sum==num)
+                {
+                    document.write(num+" armstrong");
+                }
+                else
+                {
+                    document.write(num+" not armstrong");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="arm()">click</button>
+    </body>
+</html>

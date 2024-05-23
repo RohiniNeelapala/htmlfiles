@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <script>
+            let mywindow;
+            function wopen()
+            {
+                mywindow=window.open('https://www.flipkart.com/');
+            }
+            function wclose()
+            {
+                if(!mywindow.closed)
+                    mywindow.close();
+                else
+                    document.getElementById('demo').innerHTML="window is already closed";
+                
+            }
+            function wcheck()
+            {
+                if(!mywindow)
+                {
+                    document.getElementById('demo').innerHTML="window is never opend";
+                }
+                else
+                {
+                        if(mywindow.closed)
+                        {
+                            document.getElementById('demo').innerHTML="window is closed";
+                        }
+                        else
+                        {
+                            document.getElementById('demo').innerHTML="window is open";
+                        }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="wopen()">open window</button>
+        <button onclick="wclose()">close window</button>
+        <button onclick="wcheck()">check window</button>
+        <i id="demo"></i>
+    </body>
+</html>

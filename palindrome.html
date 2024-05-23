@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            function palindrome()
+            {
+                const a=[121,340,888,350];
+                for(var x=0;x<a.length;x++)
+                {
+                    var reverse=0;
+                    for(var y=a[x];y>0;y=parseInt(y/10))
+                    {
+                        var rem=y%10;
+                        reverse=reverse*10+rem;
+                    }
+                    if(reverse==a[x])
+                    {
+                        document.write(a[x]+" "+"palindrpme"+"  ");
+                    }
+                }
+            }
+            palindrome();
+        </script>
+    </head>
+</html>

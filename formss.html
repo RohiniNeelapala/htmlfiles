@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script>
+            function m1()
+            {
+                var first_name=document.getElementById('first').value 
+                var last_name=document.getElementById('last').value 
+                alert(first_name+" "+last_name)
+                var exp=/^[a-zA-Z]+$/;
+                if(exp.test(first_name))
+                {
+                    return true;
+                }
+                else
+                {
+                    alert("first name cannot contain digits");
+                    return false;
+                }
+            }
+        </script>
+          
+    </head>
+    <body>
+        <form action=headings.html onsubmit="return m1()">
+            <label>firstname</label>
+            <input type="text" placeholder="enter first name" id="first"><br><br>
+            <label>lastname</label>
+            <input type="text" placeholder="enter least name" id="last"><br><br>
+            <label>Emailid</label>
+            <input type="email" placeholder="enter Emailid"><br><br>
+            <label>password</label>
+            <input type="password" placeholder="enter password"><br><br>
+            <label>confirm password</label>
+            <input type="password" placeholder="confirm password"><br><br>
+            <input type="submit">
+            <input type="reset">
+
+        </form>
+        
+    </body>
+</html>

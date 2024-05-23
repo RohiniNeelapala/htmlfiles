@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script>
+            function m1()
+            {
+                const a=[100,234,567,890,'abc'];
+                const b=[1,2,3,4,5];
+                console.log(a.at(2));
+                console.log(a.at(4));
+                a.push(220);
+                console.log(a);
+                a.unshift('rohini');
+                console.log(a);
+                a.shift();
+                console.log(a);
+                a.pop()
+                console.log(a);
+                console.log(a.toString());
+                console.log(a.join(" & "));
+                console.log(a.concat(a,b));
+                console.log(a.indexOf('abc'));
+                console.log(a.includes('rohini'));
+                console.log(a.sort());
+                console.log(a.reverse());
+                a.splice(1,0,66,77);
+                console.log(a);
+                for(let x of b)
+                {
+                    document.write(b);
+                }
+            }
+            m1();
+        </script>
+    </head>
+</html>

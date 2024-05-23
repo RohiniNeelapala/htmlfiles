@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+            var s="a man @ 1 a plan # 2 a canal * 3 panama $%4";
+            var s1="";
+            s2="";
+            for(var x=0;x<s.length;x++)
+            {
+                let ch=s.charAt(x);
+                if(ch>='a'&&ch<='z')
+                {
+                    s1=s1+ch;
+                    s2=ch+s2;
+                }
+            }
+            if(s1==s2)
+            {
+                document.write(s2+" "+"palindrome")
+            }
+        </script>
+    </head>
+</html>

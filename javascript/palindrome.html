@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+            function palindrome()
+            {
+                var num=prompt("enter number");
+                var rev=0;
+                var temp=num;
+                while(num>0)
+                {
+                    var rem=num%10;
+                    rev=rev*10+rem;
+                    num=parseInt(num/10);
+                }
+                document.write(rev==temp?temp+" pal":temp+" not pal");
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="palindrome()">click</button>
+    </body>
+</html>
